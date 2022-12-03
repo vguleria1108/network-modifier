@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "nbx-network-modifier",
+    "version": "1.0.0",
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "https://*/*"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Nbx Network Modifier"
+    }
+}
