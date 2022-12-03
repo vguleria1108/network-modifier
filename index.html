@@ -7,16 +7,22 @@
   </head>
   <body>
     <div class="container">
-      <input type="text" id="query-param-field" />
-      <input type="text" id="query-param-value" />
-      <button id="save-button">Add query param</button>
+      <input placeholder="Key, ex: user" type="text" id="key" />
+      <input placeholder="Value, ex: VG" type="text" id="value" />
+      <input
+        placeholder="Url, ex: https://nimblebox.ai"
+        type="text"
+        id="urlFilter"
+      />
+      <span id="status"></span>
+      <button id="save-button">Add</button>
     </div>
   </body>
   <style>
     .container {
       width: 400px;
-      height: 400px;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       padding: 16px;
@@ -36,6 +42,15 @@
     input[type="text"]:focus {
       border-color: dodgerBlue;
       box-shadow: 0 0 8px 0 dodgerBlue;
+    }
+    button {
+      color: white;
+      background-color: #0279ff;
+      border: 5px solid transparent;
+      transition: 0.2s ease;
+      border-radius: 50px;
+      width: 100%;
+      cursor: pointer;
     }
   </style>
 </html>

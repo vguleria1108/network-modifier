@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "nbx-network-modifier",
+    "name": "network-modifier",
     "version": "1.0.0",
     "permissions": [
         "declarativeNetRequest",
@@ -14,6 +14,6 @@
     },
     "action": {
         "default_popup": "index.html",
-        "default_title": "Nbx Network Modifier"
+        "default_title": "Network Modifier"
     }
 }
