@@ -4,11 +4,13 @@
     "version": "1.0.0",
     "permissions": [
         "declarativeNetRequest",
-        "storage",
+        "storage"
+    ],
+    "host_permissions": [
         "https://*/*"
     ],
     "background": {
-        "service_worker": "background.js"
+        "service_worker": "background-serviceworker.js"
     },
     "action": {
         "default_popup": "index.html",
